@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gacha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="fC3-Nb-dh5">
+                                <rect key="frame" x="13" y="5" width="349" height="135.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Lz-0m-TEa">
+                                <rect key="frame" x="-19.5" y="152" width="414" height="363"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="363" id="Vnl-G7-smM"/>
+                                    <constraint firstAttribute="width" constant="414" id="kGv-8o-qG3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMd-LC-ANo">
+                                <rect key="frame" x="149" y="593" width="77" height="30"/>
+                                <state key="normal" title="シェアする"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2D-0O-I3a"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gacha" translatesAutoresizingMaskIntoConstraints="NO" id="MTx-du-S2s">
+                                <rect key="frame" x="54.5" y="148" width="266.5" height="371"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbA-Jo-UMw">
+                                <rect key="frame" x="54" y="158.5" width="307" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="qbN-OF-jm1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRD-Ml-5Kr">
+                                <rect key="frame" x="136.5" y="628" width="102" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="ガチャ図鑑"/>
+                                <connections>
+                                    <segue destination="eIY-m9-aCQ" kind="show" id="gfI-7E-FCE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e6-4I-q39">
+                                <rect key="frame" x="96.5" y="530" width="182" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="ガチャを引く"/>
+                                <connections>
+                                    <action selector="lottery1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0j-ra-5ho"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5e6-4I-q39" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Dr-JK-Eej"/>
+                            <constraint firstItem="5Lz-0m-TEa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1dZ-jU-52P"/>
+                            <constraint firstItem="hbA-Jo-UMw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1k5-xt-HU0"/>
+                            <constraint firstItem="hbA-Jo-UMw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="31j-Il-zdr"/>
+                            <constraint firstItem="nRD-Ml-5Kr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ZR-AN-yWs"/>
+                            <constraint firstItem="5Lz-0m-TEa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S1u-m5-I0b"/>
+                            <constraint firstItem="nRD-Ml-5Kr" firstAttribute="top" secondItem="DMd-LC-ANo" secondAttribute="bottom" constant="5" id="UlF-oY-aH9"/>
+                            <constraint firstItem="MTx-du-S2s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b25-ma-L06"/>
+                            <constraint firstItem="fC3-Nb-dh5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="efJ-DU-rCL"/>
+                            <constraint firstItem="fC3-Nb-dh5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="hve-VS-coF"/>
+                            <constraint firstItem="5e6-4I-q39" firstAttribute="top" secondItem="5Lz-0m-TEa" secondAttribute="bottom" constant="15" id="irR-Cw-j5P"/>
+                            <constraint firstItem="DMd-LC-ANo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sGJ-2J-43K"/>
+                            <constraint firstItem="DMd-LC-ANo" firstAttribute="top" secondItem="5e6-4I-q39" secondAttribute="bottom" constant="15" id="sjB-my-yzH"/>
+                            <constraint firstItem="MTx-du-S2s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yII-GQ-IwP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="capcelImageView" destination="hbA-Jo-UMw" id="PJ7-Cw-KHc"/>
+                        <outlet property="gachaImageView" destination="5Lz-0m-TEa" id="84s-YE-8Da"/>
+                        <outlet property="gachaStartImageView" destination="MTx-du-S2s" id="ATz-Nz-ZdO"/>
+                        <outlet property="lottery1Button" destination="5e6-4I-q39" id="oCv-ci-aPQ"/>
+                        <outlet property="shareButton" destination="DMd-LC-ANo" id="Bkg-57-QEp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="r03-VV-npe">
+            <objects>
+                <viewController id="eIY-m9-aCQ" customClass="CollectionViewController" customModule="gacha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LNW-8o-yOj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Vz-73-yR5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G9i-1b-McA">
+                                    <size key="itemSize" width="178" height="179"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="BJB-Nw-bqR">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="179"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZNd-iQ-1r4">
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYF-AY-S5v">
+                                                    <rect key="frame" x="8" y="8" width="162" height="160"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="178" height="179"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="eIY-m9-aCQ" id="t90-uy-x2N"/>
+                                    <outlet property="delegate" destination="eIY-m9-aCQ" id="laZ-Wz-HAW"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UMw-wK-V4f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O6D-Y0-PqD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfK-sK-mMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765.21739130434787" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gacha" width="266.5" height="371"/>
+        <image name="title" width="349" height="135.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
