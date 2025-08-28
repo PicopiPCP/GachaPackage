@@ -1,0 +1,26 @@
+# ワークフローの名前
+name: Build Swift Package
+
+# 実行するタイミング
+on:
+  # mainブランチにプッシュされた時に実行
+  push:
+    branches: [ "main" ]
+  # mainブランチへのプルリクエストがあった時に実行
+  pull_request:
+    branches: [ "main" ]
+
+# 実行する処理（ジョブ）
+jobs:
+  build:
+    # macOSの最新環境で実行する
+    runs-on: macos-latest
+
+    steps:
+    # 1. リポジトリのコードをチェックアウト
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # 2. swift buildコマンドでパッケージのビルドを試す
+    - name: Build package
+      run: swift build
