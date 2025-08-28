@@ -6,6 +6,7 @@ let package = Package(
     platforms: [
         .iOS(.v15)  // iPadのPlaygroundsが対応している最低バージョンに合わせて
     ],
+    defaultLocalization: "ja",
     products: [
         .library(
             name: "Gacha",
