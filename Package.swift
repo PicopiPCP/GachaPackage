@@ -3,10 +3,10 @@ import PackageDescription
 
 let package = Package(
     name: "Gacha",
+    defaultLocalization: "ja",
     platforms: [
         .iOS(.v15)  // iPadのPlaygroundsが対応している最低バージョンに合わせて
     ],
-    defaultLocalization: "ja",
     products: [
         .library(
             name: "Gacha",
