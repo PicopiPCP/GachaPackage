@@ -2,19 +2,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "Gacha",
+    name: "gacha",
     defaultLocalization: "ja",
     platforms: [
         .iOS(.v15)  // iPadのPlaygroundsが対応している最低バージョンに合わせて
     ],
     products: [
         .library(
-            name: "Gacha",
-            targets: ["Gacha"]),
+            name: "gacha",
+            targets: ["gacha"]),
     ],
     targets: [
         .target(
-            name: "Gacha",
+            name: "gacha",
             resources: [
                 .process("Assets.xcassets"),
                 .process("Base.lproj")
